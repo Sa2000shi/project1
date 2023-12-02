@@ -1,0 +1,583 @@
+<html>
+<head>
+<title>BOOK AN EVENT</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script language=javascript>
+var n,tot,fee1,fee2;
+
+
+function funcal()
+{
+n=document.frm2.txt4.value
+if (document.frm2.txt9[0].selected)//NORMAL
+{
+if (document.frm2.txt6[0].selected)//NORMAL
+{
+fee1=50000+n*50
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+
+else if (document.frm2.txt6[1].selected)//DELUX
+{
+fee1=50000+n*100
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else (document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+
+else if (document.frm2.txt6[2].selected)//ROYAL
+{
+fee1=50000+n*200
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+
+else (document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+}
+
+
+
+else if (document.frm2.txt9[1].selected)//FLOWER
+{
+
+if (document.frm2.txt6[0].selected)//NORMAL
+{
+fee1=780000+n*50
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+else if (document.frm2.txt6[1].selected)//DELUX
+{
+fee1=50000+n*100
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+
+else if (document.frm2.txt6[2].selected)//ROYAL
+{
+fee1=50000+n*200
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+}
+
+
+
+else if (document.frm2.txt9[2].selected)//LIGHTENING
+{
+if (document.frm2.txt6[0].selected)//NORMAL
+{
+fee1=100000+n*50
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+
+else if (document.frm2.txt6[1].selected)//DELUX
+{
+fee1=50000+n*100
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+
+
+
+else if (document.frm2.txt6[2].selected)//ROYAL
+{
+fee1=50000+n*200
+if (document.frm2.txt7[0].selected)//SOFA
+{
+fee2=fee1+n*15
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else if (document.frm2.txt7[1].selected)//SOFA & CHAIR
+{
+fee2=fee1+n*25
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+else(document.frm2.txt7[2].selected)//CHAIR
+{
+fee2=fee1+n*10
+if (document.frm2.txt10[0].checked)
+{
+tot=fee2+2000
+}
+else if (document.frm2.txt10[1].checked)
+{
+tot=fee2+10000
+}
+else if (document.frm2.txt10[2].checked)
+{
+tot=fee2+12000
+}
+}
+}
+}
+
+
+
+
+document.frm2.txt11.value=tot
+}
+
+</script>
+</head>
+<body bgcolor=red>
+<hr>
+<div id="outerbox">
+<div id="sliderbox">
+<img src="23.jpg" width=500px height=323px/>
+<img src="2.4.jpg" width=500px height=323px/>
+<img src="2.5.jpg" width=500px height=323px/>
+<img src="2.6.jpg" width=500px height=323px/>
+<img src="2.7.jpg" width=500px height=323px/>
+
+</div>
+</div>
+<hr>
+
+<form name=frm2 method=post  action="http://localhost/savidprogs1/venue sakshi.php">
+<center><i><u><H1>View Venue</H1></i></u>
+
+<table cellpadding=40 cellspacing=10>
+<tr><td>Venue Type</td><td>&nbsp  <input type=text name=txt2 ></td></tr>
+
+<tr><td>Name of the Place</td><td> &nbsp  <input type=text name=txt3 ></td></tr>
+
+<tr><td>No. of Guest</td><td> &nbsp  <input type=text name=txt4 ></td></tr>
+
+<tr><td>Seating of people</td><td> &nbsp  <SELECT name=txt7 >
+<option>SOFA (per person 15 Rs)
+<option>SOFA & CHAIR(per person 25 Rs)
+<option>CHAIR(per person 10 Rs)
+</SELECT></td></tr>
+
+<tr><td>Food you like</td><td> &nbsp  <SELECT name=txt6 >
+<option>NORMAL(per person 50 Rs)
+<option>DELUX(per person 100 Rs)
+<option>ROYAL(per person 200 Rs)
+</SELECT></td></tr>
+
+<tr><td>Date of function</td><td>&nbsp  <input type=text name=txt5></td></tr>
+
+<tr><td>Decoration</td><td> &nbsp  <SELECT name=txt9 >
+<option>NORMAL(per person 50000 Rs)
+<option>FLOWER(per person 780000 Rs)
+<option>LIGHTENING(per person 100000 Rs)
+</SELECT></td></tr>
+
+<tr><td>Equipments </td><td> &nbsp 
+<input type=radio name=txt10 > dj & stage&nbsp
+<input type=radio name=txt10 >stage&nbsp
+<input type=radio name=txt10 >dj&nbsp
+</SELECT></td></tr>
+
+<tr><td>&nbsp&nbsp <a href=thank.html><input type=submit value="submit" ></a> </td><td> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type=button value="calculate"  onclick=funcal()></td></tr> 
+<tr><td>Total amount </td><td>  <input type=text name=txt11></td></tr>
+
+</center></table></form>
+
+</body>
+</html>

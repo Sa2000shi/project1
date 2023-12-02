@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>DETAILS</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script language="javascript">
+function funcost()
+{
+var pla,pay;
+pla=parseInt(document.frm2.txt1.value);
+
+if(document.frm2.txt1.value)
+{
+
+if(pla=="h")
+alert("party at home")
+pay=100
+
+if(document.frm2.txts[0].checked)
+{
+confirm("wedding anniversaries booking ")
+}
+
+else if(document.frm2.txts[1].checked)
+{
+confirm("wedding  booking ")
+}
+else if(document.frm2.txts[2].checked)
+{
+confirm("birthday booking ")
+}
+else if(document.frm2.txts[3].checked)
+{
+confirm("opening ceremonies booking ")
+}
+else if(document.frm2.txts[4].checked)
+{
+confirm("wedding anniversaries booking ")
+}
+else if(document.frm2.txts[5].checked)
+{
+confirm("seminar booking ")
+}
+else if(document.frm2.txts[6].checked)
+{
+confirm("conference booking ")
+}
+else (document.frm2.txts[7].checked)
+{
+confirm("others booking ")
+}
+
+}
+else(pla=="o")
+{
+alert("party at out door")
+pay=2000
+if(document.frm2.txts[0].checked)
+{
+confirm("wedding anniversaries booking ")
+}
+
+else if(document.frm2.txts[1].checked)
+{
+confirm("wedding  booking ")
+}
+else if(document.frm2.txts[2].checked)
+{
+confirm("birthday booking ")
+}
+else if(document.frm2.txts[3].checked)
+{
+confirm("opening ceremonies booking ")
+}
+else if(document.frm2.txts[4].checked)
+{
+confirm("wedding anniversaries booking ")
+}
+else if(document.frm2.txts[5].checked)
+{
+confirm("seminar booking ")
+}
+else if(document.frm2.txts[6].checked)
+{
+confirm("conference booking ")
+}
+else (document.frm2.txts[7].checked)
+{
+confirm("others booking ")
+}
+}
+
+
+}
+
+document.frm2.txt2.value=pay;
+}
+</script>
+</head>
+<body bgcolor=red>
+<div class="container dark">
+ <div class="wrapper" id=top_div>
+<div id="top_left">
+Email:sakshisharma@gmail.com
+</div>
+<div id="top_right">
+Mobile:9752889873
+</div>
+ </div>
+ 
+ <div id="clear">
+</div>
+</div>
+
+<div class="container">
+<div class="wrapper">
+<div id="menu">
+<ul>
+<li><a href="home.html">Home</a>
+<li><a href="det.html">My details</a>
+<li><a href="fea.html">Venue</a>
+<li><a href="book.html">Book events</a>
+<li><a href="his.html">   history</a>
+<li><a href="log.html">Login</a>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<div id="outerbox">
+<div id="sliderbox">
+<img src="23.jpg" width=500px height=333px/>
+<img src="2.4.jpg" width=500px height=333px/>
+<img src="2.5.jpg" width=500px height=333px/>
+<img src="2.6.jpg" width=500px height=333px/>
+<img src="2.7.jpg" width=500px height=333px/>
+
+</div>
+</div>
+<hr>
+
+<form name=frm2 method=post>
+<i><u><h1 align=center>View Venue</h1></i></u><br><br>
+Venue type:-  <SELECT name=txts >
+<option>Wedding Anniversaries
+<option>Wedding 
+<option>Birthday
+<option>Opening Ceremonies
+<option>Seminar
+<option>Conference
+<option>Others
+</SELECT ><br><br>
+Place:-  <input type=text name=txt1 maxlength=2>
+<br><br>
+No. of guest:-  <input type=text name=txt3 maxlength=10>
+<br><br>
+Date:-  <input type=text name=txt4 maxlength=10>
+<br>XX-YY-MM
+<br><br>
+<input type=submit value="SEARCH"  onclick=funcost()><br><br>
+
+
+</font>
+
+</body>
+</html>
