@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>form</title>
+   <!--code for font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--code for linking css file-->
+    <link rel="stylesheet" type="text/css"  href="formstyle.css"/>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h2> Registration Form</h2>
+            <div class="form-container">
+                <form>
+
+
+                    <div class="input-name">
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Full Name" class="name">
+                        </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-envelope email"></i>
+                        <input type="email" placeholder="Email I'd" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Username" class="name"> 
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" placeholder="Password" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" placeholder="Confirm Password" class="text-name">
+                    </div>
+
+                    <div class="input-name">
+                        <input type="radio" class="radio-button" name="r1">
+                        <label style="margin-right: 30px;">Male</label>
+
+                        <input type="radio" class="radio-button" name="r1">
+                        <label>Female</label>
+                    </div>
+
+                    <div class="input-name">
+                        <select class="country">
+                            <option>Select a country</option>
+                            <option>India</option>
+                            <option>Russia</option>
+                            <option>Dubai</option>
+                            <option>Italy</option>
+                            <option>Nepal</option>
+                            <option>Bhutan</option>
+                        </select>
+                        <div class="arrow"></div>
+                    </div>
+
+                    <div class="input-name">
+                        <input type="checkbox" id="cb"  class="check-button">
+                        <label for="cb" class="check">I accept the terms and conditions</label>
+                    </div>
+
+                    <div class="input-name">
+                        <input type="button" class="button" value="Register" onclick="myalert()">
+                    </div>
+
+                </form>
+
+                <script type="text/JavaScript">
+                    function myalert() {
+                        alert("Your registration is sucessfully done");
+                    }
+                    </script>
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
